@@ -15,7 +15,8 @@ var commentRoutes =require("./routes/comments");
 var articleRoutes = require("./routes/articles");
 var indexRoutes = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/articulate");
+//mongodb://localhost/articulate
+mongoose.connect("mongodb://dubeyaayush07:dubeyaayush07@ds233769.mlab.com:33769/articulate");
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
